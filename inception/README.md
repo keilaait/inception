@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by keait-he._
 ---
 
-## 📖 Description
+##  Description
 
 **Inception** is a system administration and Docker project from the 42 curriculum.
 
@@ -40,7 +40,7 @@ The infrastructure exposes a **WordPress** website over HTTPS, served through **
                     (Database)
 ---
 
-# 🎯 Project Goals
+#  Project Goals
 
 The main objectives of this project are:
 
@@ -57,11 +57,11 @@ The main objectives of this project are:
 
 ---
 
-# 🐳 Docker Architecture
+#  Docker Architecture
 
 The project contains three containers:
 
-## 🔐 NGINX Container
+##  NGINX Container
 
 NGINX is the only public entry point of the infrastructure.
 
@@ -74,7 +74,7 @@ Responsibilities:
 
 Port exposed: 443/tcp
 
-## 🌐 WordPress Container
+##  WordPress Container
 
 WordPress runs with PHP-FPM.
 
@@ -87,7 +87,7 @@ Responsibilities:
 
 Port used internally: 9000/tcp
 
-## 🗄️ MariaDB Container
+##  MariaDB Container
 
 MariaDB stores all WordPress data.
 
@@ -99,10 +99,7 @@ Responsibilities:
 
 Port used internally: 3306/tcp
 
-
-# 🚀 Instructions
-
-## Prerequisites
+# Prerequisites
 
 The project requires:
 
@@ -111,11 +108,7 @@ The project requires:
 - Docker Compose
 - Make
 
----
-
-# ✅ Instructions
-
-## Requirements
+# Requirements
 
 The project requires:
 
@@ -124,7 +117,7 @@ The project requires:
 - Docker Compose
 - Make
 
-## Project Structure
+# Project Structure
 
 ```
 .
@@ -151,7 +144,9 @@ The project requires:
 
 ```
 
-## 🚀 Usage Instructions
+#  Instruction
+
+## Usage
 
 ### Build & Run
 
@@ -172,7 +167,7 @@ make fclean
 make re
 ```
 
-## 🌍 Access the Website
+##  Access the Website
 
 Once running, open your browser and navigate to:
 
@@ -186,12 +181,12 @@ then
 
 > Accept the self-signed TLS certificate warning on first visit.
 
-## 🔧 Configuration
+##  Configuration
 
 Before launching the project, create a `.env` file.
 !! The .env file contains sensitive information and must never be committed.
 
-## 🛠️ Useful Commands
+##  Useful Commands
 
 ### Docker Commands
 
@@ -234,7 +229,7 @@ Check all wordpress users
 Delete everything (to modify wordpress user)
 
 
-# 📚 Good to Know
+#  Good to Know
 
 In this project, Docker is used *inside* a virtual machine to combine both: the VM provides a stable, isolated host environment, while Docker enables clean service separation and reproducibility.
 
@@ -245,13 +240,9 @@ This project uses **two named volumes** whose data is stored at `/home/keait-he/
 - `wordpress_data` — WordPress source files
 - mariadb_data` — MariaDB database files
 
----
+##  Technical Choices
 
-# ✅ Instructions
-
-## 🧠 Technical Choices
-
-### 🖥️ Virtual Machines vs Docker
+###  Virtual Machines vs Docker
 
 	* Virtual Machines
 A virtual machine emulates a complete computer.
@@ -288,7 +279,7 @@ Disadvantages
 
 ----
 
-### 🌐 Docker Network vs Host Network
+###  Docker Network vs Host Network
 
 	* Docker Network
 Containers communicate through an isolated Docker network.
@@ -314,7 +305,7 @@ Disadvantages:
 
 ----
 
-### 🔑 Secrets vs Environment Variables
+###  Secrets vs Environment Variables
 
 	* Environment Variables
 Environment variables store configuration values passed to containers.
@@ -349,7 +340,7 @@ Disadvantages
 
 ----
 
-### 💾 Docker Volumes vs Bind Mounts
+### Docker Volumes vs Bind Mounts
 
 	* Docker Volumes
 Volumes are managed by Docker.
@@ -385,7 +376,7 @@ Different Servers
 ├── Port 3306 → MariaDB
 └── Port 9000 → PHP-FPM / WordPress
 
-## 🎓 Evaluation Preparation (Technical Q&A)
+##  Evaluation Preparation (Technical Q&A)
 
 Q1. What is a docker network?<br>
 
@@ -408,7 +399,7 @@ In this project, we only allow HTTPS traffic through port 443 because all commun
 
 ---
 
-## 📚 Resources and References
+##  Resources and References
 
 listing classic references related to the topic (documentation, articles, tutorials etc.), as well as a description of how AI was used specifying for which tasks and which parts of the project.
 ### Docker & Infrastructure
@@ -436,7 +427,7 @@ listing classic references related to the topic (documentation, articles, tutori
 
 ---
 
-## 🤖 AI Usage Disclosure
+##  AI Usage Disclosure
 
 In accordance with 42 project directives, AI was used to assist in:
 
