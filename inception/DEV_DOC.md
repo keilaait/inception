@@ -2,7 +2,7 @@
 
 # Developer Documentation
 
-## 📋 Prerequisites
+##  Prerequisites
 
 Before starting the project, install:
 
@@ -12,7 +12,7 @@ Before starting the project, install:
 
 > Check the versions 
 
-## 📁 Project structure
+##  Project structure
 
 inception/
 ├── Makefile
@@ -26,7 +26,7 @@ inception/
 	├── nginx/
 	└── wordpress/
 
-## ⚙️ Environment configuration
+##  Environment configuration
 
 Environment variables are stored inside:
 	srcs/.env
@@ -45,7 +45,7 @@ Rebuild images :
 Remove containers and volumes :
 	make clean
 
-# 🐳 Docker Compose commands
+#  Docker Compose commands
 
 Start services:
 	docker compose -f srcs/docker-compose.yml up
@@ -54,7 +54,7 @@ Start in background :
 Stop services :
 	docker compose -f srcs/docker-compose.yml down
 
-## 💾 Data persistence
+##  Data persistence
 
 The project uses Docker volumes:
 	* MariaDB data:
@@ -63,14 +63,14 @@ The project uses Docker volumes:
 	/var/www/html
 Volumes keep data when containers are restarted.
 
-## 🔧 Development workflow
+##  Development workflow
 
 After modifying a Dockerfile:
 	make re
 After modifying configuration files :
 	docker compose up --build
 
-## 🐞 Debugging
+##  Debugging
 
 List containers:
 	docker ps
